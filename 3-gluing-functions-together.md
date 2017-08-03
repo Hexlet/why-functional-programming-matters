@@ -35,7 +35,7 @@ the list to the sum of the others, we can define
 списка к сумме других, мы можем определить
 
 ```
-sum (Cons n list) = num + sum list
+sum (Cons n list) = n + sum list
 ```
 
 Examining this definition, we see that only the boxed parts below are specific
@@ -87,7 +87,7 @@ It can also be used to test whether any of a list of booleans is true
 Можно так же использовать `foldr` проверки того, является ли хотя бы одно значение списка булевых значений истинным 
 
 ```
-anytrue = foldr (∨) F alse
+anytrue = foldr (∨) False
 ```
 
 or whether they are all true
